@@ -38,3 +38,15 @@ void swap( int vector[], int index_1, int index_2 ) {
 	vector[index_1] = vector[index_2];
 	vector[index_2] = aux;
 }
+
+int find_max_elem( int vector[], int vector_length ) {
+	int max_elem = vector[0];
+
+	for ( int iterator = 1; iterator < vector_length; iterator++ ) {
+		if ( vector[iterator] > max_elem ) {
+			max_elem = vector[iterator];
+		}
+	}
+
+	return max_elem;
+}

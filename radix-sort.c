@@ -22,11 +22,10 @@ void digit_bubble_sort( int vector[], int vector_length, int digit ) {
 }
 
 void radix_sort( int vector[], int vector_length ) {
-	int iterator = 1;
 	int digit_iterator;
+	int max_elem = find_max_elem( vector, vector_length );
 
-	for ( digit_iterator = 1; iterator <= 10; digit_iterator *= 10 ) {
+	for ( digit_iterator = 1; max_elem / digit_iterator != 0; digit_iterator *= 10 ) {
 		digit_bubble_sort( vector, vector_length, digit_iterator );
-		iterator++;
 	}
 }
