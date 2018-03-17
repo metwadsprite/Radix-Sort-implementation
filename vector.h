@@ -8,6 +8,6 @@ void read_vector( int vector[], int vector_length );
 
 void write_vector( int vector[], int vector_length );
 
-void swap( int vector[], int index_1, int index_2 );
+void swap( int *number_1, int *number_2 );
 
 int find_max_elem( int vector[], int vector_length );

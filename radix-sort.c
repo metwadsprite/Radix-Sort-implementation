@@ -12,7 +12,7 @@ void digit_bubble_sort( int vector[], int vector_length, int digit ) {
 
 			if ( (vector[iterator - 1] / digit) % 10 > (vector[iterator] / digit) % 10 ) {
 
-				swap( vector, iterator - 1, iterator );
+				swap(&vector[iterator  - 1], &vector[iterator]);
 				new_length = iterator;
 			}
 		}

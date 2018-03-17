@@ -31,12 +31,12 @@ void write_vector( int vector[], int vector_length ) {
 	printf( "\n" );
 }
 
-void swap( int vector[], int index_1, int index_2 ) {
+void swap( int *number_1, int *number_2 ) {
 	int aux;
 
-	aux = vector[index_1];
-	vector[index_1] = vector[index_2];
-	vector[index_2] = aux;
+	aux = *number_1;
+	*number_1 = *number_2;
+    *number_2 = aux;
 }
 
 int find_max_elem( int vector[], int vector_length ) {
